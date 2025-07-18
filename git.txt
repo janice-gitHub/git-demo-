@@ -1,0 +1,118 @@
+git remote add origin https://github.com/janice-gitHub/git-demo-.gitgit remote add origin https://github.com/janice-gitHub/git-demo-.git1. git version -版本號
+
+2.設定全域
+git config --global user.name Janice 
+git config --global user.email janicelu0623@gmail
+git config --list
+
+3.初始化倉庫
+git init
+
+4.倉庫狀況
+U>Untrack ( 未追蹤)
+
+git status 
+
+
+5.加入控管(暫存區)
+git add filename
+git . ( all)
+
+
+6.其餘狀態
+U>Untrack (未追蹤)
+U> A (Added)
+A> M (modified)
+A> D (delted)
+
+7.刪除後恢復
+git restore filename 
+
+8.檢視暫存區
+git ls-files -s
+
+
+9.檢視object
+git cat-file -t(型態type) shal(前6碼)
+git cat-file -p(內容) shal
+
+
+10.加入倉庫
+git commit -m "加入第.一次的控管"
+git commit -am  (add modify)
+
+11.檢視log
+git log
+git log --oneline (縮成一行)
+git log --graph (圖形化介面)
+
+12.(暫存區)檔案恢復工作目錄(U)
+git restore --staged filename
+
+13.(倉庫區)檔案恢復工作目錄(U)
+git rm --cached 2.txt
+
+
+14.強制刪除(remove)
+git rm -f 4.txt
+
+15.產生分支
+git branch branch-name
+
+16.檢視分支
+git branch
+
+17.切換分支
+git checkout branch-name 
+
+18.捨棄變更
+git checkout . 
+
+19.合併分支
+git merge test 
+master=>test
+test=>master
+
+20.合併問題
+
+git add .
+gity commit -m "完成合併衝突"
+
+21.刪除分支
+git branch -D test 
+
+22.VIM編輯器用法
+1.使用 git commit 進入
+2.使用 i 進入編輯模式
+3.書寫完後esc 切換下方命令列
+4.輸入: wq 離開(write+quite)  wq!(!強制)
+
+23.成試練習
+增加3個檔跟commit log 
+
+24.切換commit -log 
+git checkout xxxxx(6碼)
+git checkout master<=切回
+
+25.重置到某一個commit -log
+git reset xxxxxx(6碼)
+
+git reset --hard xxxxxx(6碼) 不保留後面所有變動
+
+26.檢視所有歷程
+git reflog
+
+27.綁定雲端網址
+git remote add origin https://github.com/janice-gitHub/git-demo-.git
+
+28.檢視綁定的雲端網址
+git remote -v (檢視github 指令:)
+
+29.推送到雲端
+git push 
+
+
+teacher's 
+https://github.com/jerrygitdemo/git-demo
+
+GitHub: ps: Ja062300
